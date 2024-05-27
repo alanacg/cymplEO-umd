@@ -1,18 +1,19 @@
 # Guide to umd-agroml
 ### Steps to modeling: 
-## Step 1: Prepare Remote Sensing Data
-### Part (a) - Extraction of input features via Google Earth Engine
-### Part (b) - Scripts to combine GEE Data and add yield
-## Step 2: Prepare scripts to run machine learning algorithms
-- Select machine learning models to use
+1. [Step 1: Prepare RS Data](#prepareRS)
+   (a) - Extraction of input features via Google Earth Engine
+   (b) - Scripts to combine GEE Data and add yield
+2. [Step 2: Prepare ML models](#prepareML)
+  (a) [Select Models To Use](#subparagraph3)
 - Convert EO data into descriptive, model-compatible features
 - Perform feature importance
 - Perform hyperparameter tuning
-3. Run model
-4. Analyze csv output metrics
+3. [Run ML models](#runmodels)
+4. [Analyze Model Output](#analysis)
+- Analyze CSV output metrics
 - create graphics
 
-## Step 1: Prepare Remote Sensing Data
+## Step 1: Prepare Remote Sensing Data <a name="prepareRS"></a>
 
 ### Part (a) - Extraction of input features via Google Earth Engine
 
@@ -26,9 +27,10 @@ Copy repository from this link: https://code.earthengine.google.com/?accept_repo
 ### Part (b) - Scripts to combine GEE Data and Yield
   1. modvars.py (extracting each variable, concattenating multiple variables)
   2. Transposing data frame and adding yield and crop calendar info
-## Step 2: Prepare scripts to run machine learning algorithms
+     
+## Step 2: Prepare scripts to run machine learning algorithms <a name="prepareML"></a>
 
-### Part (a) - Select machine learning models to use
+### Part (a) - Select machine learning models to use <a name="subparagraph3"></a>
 
 Find regression models, best to employ those in python. Refer to literature.
 
