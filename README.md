@@ -4,14 +4,14 @@
    - [(a) Extraction of input features via Google Earth Engine](#subparagraph1)
    - [(b) Scripts to combine GEE Data and add yield](#subparagraph2)
 2. [Step 2: Prepare ML models](#prepareML)
-  (a) [Select Models To Use](#subparagraph3)
-- Convert EO data into descriptive, model-compatible features
-- Perform feature importance
-- Perform hyperparameter tuning
+  - (a) [Select Models To Use](#subparagraph3)
+  - (b) Convert EO data into descriptive, model-compatible features
+  - (c) Perform feature importance
+  - (d) Perform hyperparameter tuning
 3. [Run ML models](#runmodels)
 4. [Analyze Model Output](#analysis)
-- Analyze CSV output metrics
-- create graphics
+  - Analyze CSV output metrics
+  - create graphics
 
 ## Step 1: Prepare Remote Sensing Data <a name="prepareRS"></a>
 
