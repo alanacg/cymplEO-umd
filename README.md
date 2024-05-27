@@ -1,8 +1,8 @@
 # Guide to umd-agroml
 ### Steps to modeling: 
 1. [Step 1: Prepare RS Data](#prepareRS)
-   (a) - Extraction of input features via Google Earth Engine
-   (b) - Scripts to combine GEE Data and add yield
+   - [(a) Extraction of input features via Google Earth Engine](#subparagraph1)
+   - [(b) Scripts to combine GEE Data and add yield](#subparagraph2)
 2. [Step 2: Prepare ML models](#prepareML)
   (a) [Select Models To Use](#subparagraph3)
 - Convert EO data into descriptive, model-compatible features
@@ -15,7 +15,7 @@
 
 ## Step 1: Prepare Remote Sensing Data <a name="prepareRS"></a>
 
-### Part (a) - Extraction of input features via Google Earth Engine
+### Part (a) - Extraction of input features via Google Earth Engine <a name="subparagraph1"></a>
 
 This model was created with the intention of relying exclusively on inputs derived from remote sensing (RS) products, to assess their feasibility in producing results without requiring extensive field campaigns. This data has been sourced in the past exclusively using Google Earth Engine (GEE) scripts, however methods are available for extracting data not available on GEE as well. The variables chosen in this example cover both meterological influences to crop growth, and metrics of ecological conditions related to crop growth. These include air temperature, precipitation, soil moisture, evaporative stress index (ESI) and normalized differential vegetation index (NDVI). 
 
