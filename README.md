@@ -2,9 +2,10 @@
 ### Steps to modeling: 
 1. [Step 1: Prepare RS Data](#prepareRS)
    - [(a) Extraction of input features via Google Earth Engine](#subparagraph1)
-   - [(b) Scripts to combine GEE Data and add yield](#subparagraph2)
+   - [(b) Python package requirements and installation(#subparagraph2)]
+   - [(c) Scripts to combine GEE Data and add yield](#subparagraph3)
 2. [Step 2: Prepare ML models](#prepareML)
-  - (a) [Select Models To Use](#subparagraph3)
+  - (a) [Select Models To Use](#subparagraph4)
   - (b) Convert EO data into descriptive, model-compatible features
   - (c) Perform feature importance
   - (d) Perform hyperparameter tuning
@@ -24,7 +25,13 @@ Copy repository from this link: https://code.earthengine.google.com/?accept_repo
   * Shapefile of regional boundaries (Administrative 1 County-level for Kenya)
   * Shapefile of crop mask (maize for this model)
     
-### Part (b) - Scripts to combine GEE Data and Yield
+### Part (b) - Python package requirements and installation
+
+Most code for this model can be executed as scripts without an IDE and just a code editor. However, the scripts have been organized into Jupyter Notebooks for this repository, and can be ran with various local platforms such as Jupyter lab/notebook via Anaconda Navigator or Visual Studio Code. Find more information about Jupyter notebooks <a href="https://docs.jupyter.org/en/latest/">here</a>. If using one of these platforms, all python packages needed can be organized within a conda environment. See x file for a list of some required package installation commands.
+
+These notebooks can also be adapted to be run with Google CoLab.
+
+### Part (c) - Scripts to combine GEE Data and Yield
   1. modvars.py (extracting each variable, concattenating multiple variables)
   2. Transposing data frame and adding yield and crop calendar info
      
