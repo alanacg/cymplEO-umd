@@ -38,7 +38,8 @@ Most code for this model can be executed as scripts without an IDE and just a co
 
 These notebooks can also be adapted to be run with Google CoLab.
 
-### Part (c) - Scripts to combine GEE Data and Yield <a href="modvars_share.py">modvars_share.py</a>  
+### Part (c) - Scripts to combine GEE Data and Yield 
+- <a href="modvars_share.py">modvars_share.py</a>  
   1. Extracting each variable, concattenating multiple variables
   2. Transposing data frame and adding yield and crop calendar info
      
@@ -52,3 +53,16 @@ Find regression models, best to employ those in python. Refer to literature.
 ### Part (b) - Convert EO data into model-compatible features
 
 The model will generate 1 yield prediction based on each year and unique administrative region, in this case we rely on county-level (KE Admin 1), that all data is available for. As the highest resolution of data for a feature is daily, we need to find the best way to describe each spread with 1 or more aggregation metrics. This example creates a feature for monthly averages of each variable. Percentiles may also be effective.
+
+## Step 3: Run ML Models
+<a href="agroml_tv_run2xgb">agroml_tv_run2xgb</a>
+This file is a script that can be used to run the models defined in machinelearns6.py. 
+Inputs by model:
+RFR: (test, xy, t)
+   test: dataframe with X and y testing set, can be produced by set_maker, but is acceptable as long as indices match arrays in xy
+   xy: dictionary produced by set_maker, or dictionary that contains numpy arrays of an X training set, y training set, X testing set, and y testing       set
+   * model inputs must have no missing values
+   t: n_estimators (hyperparameter, integer)
+MERF: (train, test, xy,t)
+XGB: (train, test, xy, t)
+   t: num_parallel_tree (hyperparameter, integer)
