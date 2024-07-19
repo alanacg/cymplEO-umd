@@ -27,10 +27,12 @@ Copy repository from this link: https://code.earthengine.google.com/?accept_repo
     
 ### Part (b) - Python package requirements and installation <a name="subparagraph2"></a>
 Package requirements:
-pandas
-numpy
-scikit-learn
-<a href="https://manifoldai.github.io/merf/">pip install merf</a>
+pandas \n
+numpy \n
+scikit-learn \n
+<a href="https://manifoldai.github.io/merf/">pip install merf</a> \n
+<a href="https://xgboost.readthedocs.io/en/stable/install.html#conda">pip install xgboost</a> \n
+pip install glob2
 
 Most code for this model can be executed as scripts without an IDE and just a code editor. However, the scripts have been organized into Jupyter Notebooks for this repository, and can be ran with various local platforms such as Jupyter lab/notebook via Anaconda Navigator or Visual Studio Code. Find more information about Jupyter notebooks <a href="https://docs.jupyter.org/en/latest/">here</a>. If using one of these platforms, all python packages needed can be organized within a conda environment. See x file for a list of some required package installation commands.
 
