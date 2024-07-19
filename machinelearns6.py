@@ -232,7 +232,7 @@ def input_extraction(feature_names, percentiles, csv, mon=False):
     #inputs - feature_names: list of all features from main 5 that we want included, should be as list type
     #percentiles (options are 'yes' or 'no') : decides if we want features split into percentiles or just left as is
     #csv = pd.read_csv('/gpfs/data1/cmongp1/ginsburga/sp24_2/kenya_maize_a3b.csv')
-    print(mon)
+    #mon - this input decides if you would like to create subseasonal forecasts excluding certain months in the growing season
     if mon != False:
         #mon is input dataset for year where predictions are being generated
         #exclusion of data is specifically for testing data only
