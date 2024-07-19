@@ -2,7 +2,7 @@
 ### Steps to modeling: 
 1. [Step 1: Prepare RS Data](#prepareRS)
    - [(a) Extraction of input features via Google Earth Engine](#subparagraph1)
-   - [(b) Python package requirements and installation(#subparagraph2)]
+   - [(b) Python package requirements and installation](#subparagraph2)
    - [(c) Scripts to combine GEE Data and add yield](#subparagraph3)
 2. [Step 2: Prepare ML models](#prepareML)
   - (a) [Select Models To Use](#subparagraph4)
@@ -27,13 +27,14 @@ Copy repository from this link: https://code.earthengine.google.com/?accept_repo
     
 ### Part (b) - Python package requirements and installation <a name="subparagraph2"></a>
 Package requirements:
+<p>
 pandas \n
 numpy \n
 scikit-learn \n
 <a href="https://manifoldai.github.io/merf/">pip install merf</a> \n
 <a href="https://xgboost.readthedocs.io/en/stable/install.html#conda">pip install xgboost</a> \n
 pip install glob2
-
+</p>
 Most code for this model can be executed as scripts without an IDE and just a code editor. However, the scripts have been organized into Jupyter Notebooks for this repository, and can be ran with various local platforms such as Jupyter lab/notebook via Anaconda Navigator or Visual Studio Code. Find more information about Jupyter notebooks <a href="https://docs.jupyter.org/en/latest/">here</a>. If using one of these platforms, all python packages needed can be organized within a conda environment. See x file for a list of some required package installation commands.
 
 These notebooks can also be adapted to be run with Google CoLab.
@@ -43,6 +44,7 @@ These notebooks can also be adapted to be run with Google CoLab.
   2. Transposing data frame and adding yield and crop calendar info
      
 ## Step 2: Prepare scripts to run machine learning algorithms <a name="prepareML"></a>
+<p> Scripts or notebooks that run models randomforestregressor, xgboost, or merf use functions from the machinelearn class defined in machinelearns6.py. Once the class is instantialized, functions for each of these models can be run, with room for modification to hyperparameters and training and testing data, interpreted in the form of dictionaries of numpy arrays. </p>
 
 ### Part (a) - Select machine learning models to use <a name="subparagraph3"></a>
 
