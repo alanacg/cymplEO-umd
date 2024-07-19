@@ -25,14 +25,19 @@ Copy repository from this link: https://code.earthengine.google.com/?accept_repo
   * Shapefile of regional boundaries (Administrative 1 County-level for Kenya)
   * Shapefile of crop mask (maize for this model)
     
-### Part (b) - Python package requirements and installation
+### Part (b) - Python package requirements and installation <a name="subparagraph2"></a>
+Package requirements:
+pandas
+numpy
+scikit-learn
+<a href="https://manifoldai.github.io/merf/">pip install merf</a>
 
 Most code for this model can be executed as scripts without an IDE and just a code editor. However, the scripts have been organized into Jupyter Notebooks for this repository, and can be ran with various local platforms such as Jupyter lab/notebook via Anaconda Navigator or Visual Studio Code. Find more information about Jupyter notebooks <a href="https://docs.jupyter.org/en/latest/">here</a>. If using one of these platforms, all python packages needed can be organized within a conda environment. See x file for a list of some required package installation commands.
 
 These notebooks can also be adapted to be run with Google CoLab.
 
-### Part (c) - Scripts to combine GEE Data and Yield
-  1. modvars.py (extracting each variable, concattenating multiple variables)
+### Part (c) - Scripts to combine GEE Data and Yield <a href="modvars_share.py">modvars_share.py</a>  
+  1. Extracting each variable, concattenating multiple variables
   2. Transposing data frame and adding yield and crop calendar info
      
 ## Step 2: Prepare scripts to run machine learning algorithms <a name="prepareML"></a>
