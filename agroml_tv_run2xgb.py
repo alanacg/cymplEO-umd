@@ -22,12 +22,9 @@ feature_names1 = ['ndvi', 'esi', 'tmax', 'tmin', 'cmax','cmin','fldas']
 #modifying this to also use the stat array function, rfr, and ridge
 #include all years 2001-2016
 file1 = pd.read_csv('/gpfs/data1/cmongp1/ginsburga/sp24_2/kenya_maize_a3b.csv')
-#years = np.arange(2001, 2017, 1, dtype=int)
-years = [2001]
-#dek2 = input_extraction(feature_names1, 'yes', file1, False)
-#dek2.to_csv('kenya_maize_dek2.csv')
-#years = {2019:'/gpfs/data1/cmongp1/ginsburga/sp24_2/kenya_maize_2019.csv'}
-         #,2023:'/gpfs/data1/cmongp1/ginsburga/sp24_2/maize_eo_2023.csv'}
+years = np.arange(2001, 2017, 1, dtype=int)
+dek2 = input_extraction(feature_names1, 'yes', file1, False)
+dek2.to_csv('kenya_maize_dek2.csv')
 
 #extract only columns with features that have highest importances
 
