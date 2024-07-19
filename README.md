@@ -61,9 +61,9 @@ Inputs by model:
 
 RFR: (test, xy, t)
    test: dataframe with X and y testing set, can be produced by set_maker, but is acceptable as long as indices match arrays in xy
-   xy: dictionary produced by set_maker, or dictionary that contains numpy arrays of an X training set, y training set, X testing set, and y testing       set
-   * model inputs must have no missing values
-   t: n_estimators (hyperparameter, integer)
-MERF: (train, test, xy,t)
-XGB: (train, test, xy, t)
+   xy: dictionary produced by set_maker, or dictionary that contains numpy arrays of an X training set, y training set, X testing set, and y testing       set  
+   * model inputs must have no missing values  
+   t: n_estimators (hyperparameter, integer)  <br>
+MERF: (train, test, xy,t) <br>
+XGB: (train, test, xy, t) <br>
    t: num_parallel_tree (hyperparameter, integer)
