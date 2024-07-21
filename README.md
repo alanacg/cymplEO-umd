@@ -59,11 +59,12 @@ The model will generate 1 yield prediction based on each year and unique adminis
 This file is a script that can be used to run the models defined in machinelearns6.py. 
 Inputs by model:
 
-RFR: (test, xy, t)
-   test: dataframe with X and y testing set, can be produced by set_maker, but is acceptable as long as indices match arrays in xy
-   xy: dictionary produced by set_maker, or dictionary that contains numpy arrays of an X training set, y training set, X testing set, and y testing       set  
-   * model inputs must have no missing values  
-   t: n_estimators (hyperparameter, integer)  <br>
+RFR: (test, xy, t) <br>
+-test: testing dataframe with X and y testing set, can be produced by set_maker, but is acceptable as long as indices match arrays in xy <br>
+-xy: dictionary produced by set_maker, or dictionary that contains numpy arrays of an X training set, y training set, X testing set, and y testing set <br>
+-** model inputs must have no missing values  <br>
+-t: n_estimators (hyperparameter, integer)  <br>
 MERF: (train, test, xy,t) <br>
+-train: training dataframe with X and y testing set, can be produced by set_maker, but is acceptable as long as indices match arrays in xy  <br>
 XGB: (train, test, xy, t) <br>
-   t: num_parallel_tree (hyperparameter, integer)
+-t: num_parallel_tree (hyperparameter, integer)
