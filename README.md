@@ -52,19 +52,20 @@ Find regression models, best to employ those in python. Refer to literature.
 
 ### Part (b) - Convert EO data into model-compatible features
 
-The model will generate 1 yield prediction based on each year and unique administrative region, in this case we rely on county-level (KE Admin 1), that all data is available for. As the highest resolution of data for a feature is daily, we need to find the best way to describe each spread with 1 or more aggregation metrics. This example creates a feature for monthly averages of each variable. Percentiles may also be effective.
+The model will generate 1 yield prediction based on each year and unique administrative region, in this case we rely on county-level (KE Admin 1), that all data is available for. As the highest resolution of data for a feature is daily, we need to find the best way to describe each spread with 1 or more aggregation metrics. Code exists within machinelearn6 to produce either a feature for monthly averages of each variable and for decile percentiles. Saving these features as new csv files will help cut runtimes.
 
 ## Step 3: Run ML Models
 <a href="agroml_tv_run2xgb">agroml_tv_run2xgb</a>
 This file is a script that can be used to run the models defined in machinelearns6.py. 
+
 Inputs by model:
 
 RFR: (test, xy, t) <br>
-   -test: testing dataframe with X and y testing set, can be produced by set_maker, but is acceptable as long as indices match arrays in xy <br>
-   -xy: dictionary produced by set_maker, or dictionary that contains numpy arrays of an X training set, y training set, X testing set, and y testing set <br>
+   - test: testing dataframe with X and y testing set, can be produced by set_maker, but is acceptable as long as indices match arrays in xy <br>
+   - xy: dictionary produced by set_maker, or dictionary that contains numpy arrays of an X training set, y training set, X testing set, and y testing set <br>
    -** model inputs must have no missing values  <br>
    -t: n_estimators (hyperparameter, integer)  <br>
 MERF: (train, test, xy,t) <br>
-   -train: training dataframe with X and y testing set, can be produced by set_maker, but is acceptable as long as indices match arrays in xy  <br>
+   - train: training dataframe with X and y testing set, can be produced by set_maker, but is acceptable as long as indices match arrays in xy  <br>
 XGB: (train, test, xy, t) <br>
-   -t: num_parallel_tree (hyperparameter, integer)
+   - t: num_parallel_tree (hyperparameter, integer)
