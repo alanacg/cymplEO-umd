@@ -44,7 +44,7 @@ These notebooks can also be adapted to be run with Google CoLab.
   2. Transposing data frame and adding yield and crop calendar info
      
 ## Step 2: Prepare scripts to run machine learning algorithms <a name="prepareML"></a>
-<p> Scripts or notebooks that run models randomforestregressor, xgboost, or merf use functions from the machinelearn class defined in machinelearns6.py. Once the class is instantialized, functions for each of these models can be run, with room for modification to hyperparameters and training and testing data, interpreted in the form of dictionaries of numpy arrays. </p>
+<p> Scripts or notebooks that run models **randomforestregressor, xgboost, or merf** use functions from the machinelearn class defined in machinelearns6.py. Once the class is instantialized, functions for each of these models can be run, with room for modification to hyperparameters and training and testing data, interpreted in the form of dictionaries of numpy arrays. </p>
 
 ### Part (a) - Select machine learning models to use <a name="subparagraph3"></a>
 
@@ -60,11 +60,11 @@ This file is a script that can be used to run the models defined in machinelearn
 Inputs by model:
 
 RFR: (test, xy, t) <br>
--test: testing dataframe with X and y testing set, can be produced by set_maker, but is acceptable as long as indices match arrays in xy <br>
--xy: dictionary produced by set_maker, or dictionary that contains numpy arrays of an X training set, y training set, X testing set, and y testing set <br>
--** model inputs must have no missing values  <br>
--t: n_estimators (hyperparameter, integer)  <br>
+   -test: testing dataframe with X and y testing set, can be produced by set_maker, but is acceptable as long as indices match arrays in xy <br>
+   -xy: dictionary produced by set_maker, or dictionary that contains numpy arrays of an X training set, y training set, X testing set, and y testing set <br>
+   -** model inputs must have no missing values  <br>
+   -t: n_estimators (hyperparameter, integer)  <br>
 MERF: (train, test, xy,t) <br>
--train: training dataframe with X and y testing set, can be produced by set_maker, but is acceptable as long as indices match arrays in xy  <br>
+   -train: training dataframe with X and y testing set, can be produced by set_maker, but is acceptable as long as indices match arrays in xy  <br>
 XGB: (train, test, xy, t) <br>
--t: num_parallel_tree (hyperparameter, integer)
+   -t: num_parallel_tree (hyperparameter, integer)
