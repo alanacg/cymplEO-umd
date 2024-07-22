@@ -55,7 +55,7 @@ Find regression models, best to employ those in python. Refer to literature.
 The model will generate 1 yield prediction based on each year and unique administrative region, in this case we rely on county-level (KE Admin 1), that all data is available for. As the highest resolution of data for a feature is daily, we need to find the best way to describe each spread with 1 or more aggregation metrics. Code exists within machinelearn6 to produce either a feature for monthly averages of each variable and for decile percentiles. Saving these features as new csv files will help cut runtimes.
 
 ## Step 3: Run ML Models
-<a href="agroml_tv_run2xgb">agroml_tv_run2xgb</a>
+<a href="agroml_tv_run2xgb.py">agroml_tv_run2xgb.py</a>
 This file is a script that can be used to run the models defined in machinelearns6.py. 
 
 Inputs by model:
