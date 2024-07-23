@@ -6,7 +6,7 @@
    - [(c) Scripts to combine GEE Data and add yield](#subparagraph3)
 2. [Step 2: Prepare ML models](#prepareML)
   - (a) [Select Models To Use](#subparagraph4)
-  - (b) Convert EO data into descriptive, model-compatible features
+  - (b) [Convert EO data into descriptive, model-compatible features] (#featureengineering)
   - (c) Perform feature importance
   - (d) Perform hyperparameter tuning
 3. [Run ML models](#runmodels)
@@ -50,11 +50,11 @@ These notebooks can also be adapted to be run with Google CoLab.
 
 Find regression models, best to employ those in python. Refer to literature.
 
-### Part (b) - Convert EO data into model-compatible features
+### Part (b) - Convert EO data into model-compatible features <a name="featureengineering"></a>
 
 The model will generate 1 yield prediction based on each year and unique administrative region, in this case we rely on county-level (KE Admin 1), that all data is available for. As the highest resolution of data for a feature is daily, we need to find the best way to describe each spread with 1 or more aggregation metrics. Code exists within machinelearn6 to produce either a feature for monthly averages of each variable and for decile percentiles. Saving these features as new csv files will help cut runtimes.
 
-## Step 3: Run ML Models
+## Step 3: Run ML Models <a name="runmodels"></a>
 <a href="agroml_tv_run2xgb.py">agroml_tv_run2xgb.py</a>
 This file is a script that can be used to run the models defined in machinelearns6.py. 
 
