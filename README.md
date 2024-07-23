@@ -61,11 +61,11 @@ This file is a script that can be used to run the models defined in machinelearn
 Inputs by model:
 
 **RFR**: (test, xy, t) <br>
-   - test: testing dataframe with X and y testing set, can be produced by set_maker, but is acceptable as long as indices match arrays in xy <br>
-   - xy: dictionary produced by set_maker, or dictionary that contains numpy arrays of an X training set, y training set, X testing set, and y testing set <br>
+<li>test: testing dataframe with X and y testing set, can be produced by set_maker, but is acceptable as long as indices match arrays in xy </li>
+<li>xy: dictionary produced by set_maker, or dictionary that contains numpy arrays of an X training set, y training set, X testing set, and y testing set</li>
 *model inputs must have no missing values  <br>
-   -t: n_estimators (hyperparameter, integer)  <br>
+<li>t: n_estimators (hyperparameter, integer)</li>
 **MERF**: (train, test, xy,t) <br>
-   - train: training dataframe with X and y testing set, can be produced by set_maker, but is acceptable as long as indices match arrays in xy  <br>
+<li>train: training dataframe with X and y testing set, can be produced by set_maker, but is acceptable as long as indices match arrays in xy  </li>
 **XGBoost**: (train, test, xy, t) <br>
-   - t: num_parallel_tree (hyperparameter, integer)
+<li>t: num_parallel_tree (hyperparameter, integer)</li>
