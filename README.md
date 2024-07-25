@@ -5,8 +5,8 @@
    - [(b) Python package requirements and installation](#subparagraph2)
    - [(c) Scripts to combine GEE Data and add yield](#subparagraph3)
 2. [Step 2: Prepare ML models](#prepareML)
-  - (a) [Select Models To Use](#subparagraph4)
-  - (b) [Convert EO data into descriptive, model-compatible features] (#featureengineering)
+  - [(a) Select Models To Use](#subparagraph4)
+  - [(b) Convert EO data into descriptive, model-compatible features](#featureengineering)
   - (c) Perform feature importance
   - (d) Perform hyperparameter tuning
 3. [Run ML models](#runmodels)
