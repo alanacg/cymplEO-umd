@@ -44,7 +44,7 @@ These notebooks can also be adapted to be run with Google CoLab.
   2. Transposing data frame and adding yield and crop calendar info
      
 ## Step 2: Prepare scripts to run machine learning algorithms <a name="prepareML"></a>
- Scripts or notebooks that run models **randomforestregressor, xgboost, or merf** use functions from the machinelearn class defined in machinelearns6.py. Once the class is instantialized, functions for each of these models can be run, with room for modification to hyperparameters and training and testing data, interpreted in the form of dictionaries of numpy arrays.
+ Scripts or notebooks that run models **randomforestregressor, xgboost, or merf** use functions from the machinelearn class defined in <a href="machinelearns6.py">machinelearns6.py</a>. Once the class is instantialized, functions for each of these models can be run, with room for modification to hyperparameters and training and testing data, interpreted in the form of dictionaries of numpy arrays.
 
 ### Part (a) - Select machine learning models to use <a name="subparagraph3"></a>
 
