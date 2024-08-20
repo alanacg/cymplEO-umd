@@ -1,4 +1,4 @@
-# Guide to umd-agroml
+# Guide to cymplEO
 ### Steps to modeling: 
 1. [Step 1: Prepare RS Data](#prepareRS)
    - [(a) Extraction of input features via Google Earth Engine](#subparagraph1)
@@ -7,8 +7,7 @@
 2. [Step 2: Prepare ML models](#prepareML)
   - [(a) Select Models To Use](#subparagraph4)
   - [(b) Convert EO data into descriptive, model-compatible features](#featureengineering)
-  - (c) Perform feature importance
-  - (d) Perform hyperparameter tuning
+  - (c) Perform feature importance and hyperparameter tuning
 3. [Run ML models](#runmodels)
 4. [Analyze Model Output](#analysis)
   - Analyze CSV output metrics
@@ -52,7 +51,9 @@ Find regression models, best to employ those in python. Refer to literature.
 
 ### Part (b) - Convert EO data into model-compatible features <a name="featureengineering"></a>
 
-The model will generate 1 yield prediction based on each year and unique administrative region, in this case we rely on county-level (KE Admin 1), that all data is available for. As the highest resolution of data for a feature is daily, we need to find the best way to describe each spread with 1 or more aggregation metrics. Code exists within machinelearn6 to produce either a feature for monthly averages of each variable and for decile percentiles. Saving these features as new csv files will help cut runtimes.
+The model will generate 1 yield prediction based on each year and unique administrative region (we rely on county-level (KE Admin 1)) that all data is available for. As the highest resolution of data for a feature is daily, we need to find the best way to describe each spread with 1 or more aggregation metrics. Code exists within machinelearn6 to convert output from <a href="modvars_share.py">modvars_share.py</a> to produce either: (1) a feature for monthly averages of each variable and (2) decile percentiles for the growing season. Saving these features as new csv files will help cut runtimes. Files to generate these two feature styles are included in <a href="featureengineering/">featureengineering</a>.
+
+### Part (c) - Perform feature importance and hyperparameter tuning <a name="hyperparam"></a>
 
 ## Step 3: Run ML Models <a name="runmodels"></a>
 <a href="agroml_tv_run2xgb.py">agroml_tv_run2xgb.py</a>
