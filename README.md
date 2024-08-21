@@ -21,8 +21,9 @@ This model was created with the intention of relying exclusively on inputs deriv
 
 Copy repository from this link: https://code.earthengine.google.com/?accept_repo=users/acgins/inputdata_keadm1 (not shared 5/27)
   Needed files:
-  * Shapefile of regional boundaries (Administrative 1 County-level for Kenya)
-  * Shapefile of crop mask (maize for this model)
+  * Shapefile of regional boundaries (Administrative 1 County-level for Kenya) asset
+  * Shapefile of crop mask (maize for this model) asset
+  * CCI global LC Layers 2015-2020 assets
     
 ### Part (b) - Python package requirements and installation <a name="subparagraph2"></a>
 Package requirements:
