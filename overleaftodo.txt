@@ -1,1 +1,15 @@
+Summary doc: https://docs.google.com/document/d/16Uu5Owmls7vNWm37h1Jl7dAwi22j491YHPBL_dpOWNo/edit?usp=sharing
+Abstract
+1. New cross-validation statistic for R2 higher than 0.63 (9/5)
 
+Intro
+
+
+Methods
+1. Modify model building diagrams for input into the paper (9/5)
+
+Results
+
+Discussion
+
+Conclusion
