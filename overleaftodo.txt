@@ -7,7 +7,7 @@ Intro
 
 Methods
 1. Modify model building diagrams for input into the paper (9/5)
-
+2. Write and edit details on hyperparameter tuning and model builds (9/17)
 Results
 1. figures?
 2. edit r2 values (9/16) - line #s where...
