@@ -7,6 +7,7 @@ Intro
 
 Methods
 1. Modify model building diagrams for input into the paper (9/5)
+- mermaidchart
 2. Write and edit details on hyperparameter tuning and model builds (9/17)
 
 Results
@@ -15,3 +16,13 @@ Results
 Discussion
 
 Conclusion
+
+
+ensemble types
+- based on mse - weighted average
+- stacking: can be done in sklearn, linear regression run as well treated as a baseline
+is this a worthwhile change to make?
+ -- meta model from machinelearningmastery
+
+OR a combination of best features
+
